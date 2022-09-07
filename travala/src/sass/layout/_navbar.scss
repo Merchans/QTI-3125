@@ -1,0 +1,10 @@
+@use "../abstracts/abstracts" as *;
+@use "../base/base" as *;
+
+
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

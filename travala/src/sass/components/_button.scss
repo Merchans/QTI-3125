@@ -1,0 +1,32 @@
+@use "../abstracts/abstracts" as *;
+@use "../base/base" as *;
+
+.button {
+    font-size: toRem(18);
+    background-color: $white;
+    color: $primary-color;
+    font-weight: 700;
+    line-height: $line-height-base;
+    text-decoration: none;
+    border-radius: $big-radius;
+    padding: toRem(12.5) toRem(36);
+    display: inline-block;
+
+    a {
+        padding: 0;
+        line-height: 22px;
+        text-decoration: none;
+        color: $primary-color;
+    }
+
+    &--gold {
+        padding: toRem(16) toRem(24);
+        background: $gold;
+    }
+
+    &--purple {
+        padding: toRem(9) toRem(20);
+        background: $purple;
+        border-radius: $small-radius;
+    }
+}

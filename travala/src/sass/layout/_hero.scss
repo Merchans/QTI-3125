@@ -1,0 +1,7 @@
+@use "../abstracts/abstracts" as *;
+@use "../base/base" as *;
+
+.hero {
+    padding: toRem(58) 0;
+    background-color: $primary-color;
+}

@@ -1,0 +1,9 @@
+@use "../abstracts/abstracts" as *;
+
+.wrapper {
+    max-width: map-get($map: $container-max-width, $key: 'md');
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}

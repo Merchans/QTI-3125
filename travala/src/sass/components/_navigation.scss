@@ -1,0 +1,37 @@
+@use "../abstracts/abstracts" as *;
+@use "../base/base" as *;
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__cta {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+    &__link {
+        font-size: $font-size-base;
+        padding: toRem(25);
+        text-decoration: none;
+        color: rgba($white, $opacity);
+        
+
+        &--active,
+        &--light,
+        &:hover {
+            color: $white;
+        }
+    }
+}
