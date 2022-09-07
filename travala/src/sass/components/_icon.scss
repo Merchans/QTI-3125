@@ -1,0 +1,12 @@
+@use "../abstracts/abstracts" as *;
+
+.icon {
+    display: flex;
+    color: $primary-color;
+    opacity: 1;
+    width: 20px;
+
+    &--facebook {
+       justify-content: center;
+    }
+}

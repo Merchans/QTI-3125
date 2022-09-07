@@ -14,6 +14,11 @@
         background: $primary-color;
         font-size: toRem(18);
         color: $white;
+          
+        @include respond(map-get($map: $container-max-width, $key: 'md')) {
+            z-index: map-get($map: $z-index, $key: 'light-weight');
+        }   
+
     }
 
     &__text {
@@ -25,12 +30,17 @@
         font-size: toRem(18);
         letter-spacing: 0.1rem;
         color: $white;
+          
+        @include respond(map-get($map: $container-max-width, $key: 'md')) {
+            display: none;
+        }   
+
     }
 
     &--light {
         
         svg {
-            background: $white;
+            background: $gray;
             color: $primary-color;
         }
 

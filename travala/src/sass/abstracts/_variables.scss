@@ -9,7 +9,7 @@ $small-radius: 40px;
 
 // Breakpoints
 $breakpoints: (
-    xs: 0, x
+    xs: 0, 
     sm: 600px, // mobile landscape, tablet (portrait)
     md: 1024px, // chromebooks, ipad pro (portrait), tablet (landscape)
     lg: 1600px, // most laptops and desktops
@@ -22,4 +22,13 @@ $container-max-width: (
     md: 1280px, 
     lg: 1920px,
     xl: 3840px
+);
+
+
+// z-index 
+
+$z-index: (
+    light-weight: 1,
+    medium-weight: 10,
+    heavy-weight: 100,
 );

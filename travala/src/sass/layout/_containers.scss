@@ -6,4 +6,11 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+
+    &__group {
+        display: flex;
+        justify-content: space-between;
+        gap: toRem(50);
+        flex-wrap: wrap;
+    }
 }
