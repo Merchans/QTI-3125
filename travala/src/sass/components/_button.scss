@@ -9,11 +9,11 @@
     line-height: $line-height-base;
     text-decoration: none;
     border-radius: $big-radius;
-    padding: toRem(12.5) toRem(36);
     display: inline-block;
 
     a {
-        padding: 0;
+        padding: toRem(12.5) toRem(36);
+        display: inline-block;
         line-height: 22px;
         text-decoration: none;
         color: $primary-color;

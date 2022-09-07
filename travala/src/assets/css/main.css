@@ -378,11 +378,11 @@ body {
   line-height: 2.25rem;
   text-decoration: none;
   border-radius: 100px;
-  padding: 0.78125rem 2.25rem;
   display: inline-block;
 }
 .button a {
-  padding: 0;
+  padding: 0.78125rem 2.25rem;
+  display: inline-block;
   line-height: 22px;
   text-decoration: none;
   color: #0C111F;
