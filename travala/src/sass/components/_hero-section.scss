@@ -4,5 +4,161 @@
 .hero {
     padding: toRem(58) 0;
     background-color: $primary-color;
-    background-image: url("../img/hero-bg.png");
+    font-family: $font-family-secondary;
+
+    &__content {
+        max-width: map-get($map: $container-max-width, $key: 'md');
+        border-radius: $small-radius;
+        margin: toRem(58) auto 0 auto;
+        text-align: center;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: $opacity;
+            background-image: url("../../../public/images/hero-bg.png");
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__title {
+        color: $white;
+        font-weight: 700;
+        margin: 0;
+        padding: toRem(60) toRem(312) toRem(24) toRem(312);
+        line-height: toRem(86);
+        font-size: toRem(72);
+        position: relative;
+        text-align: center;
+ 
+        @include respond(map-get($map: $container-max-width, $key: 'md')) {
+            padding: toRem(30) toRem(156) toRem(12) toRem(156);
+            line-height: toRem(43);
+            font-size: toRem(50);
+        }
+
+        @include respond(map-get($map: $container-max-width, $key: 'sm')) {
+            padding: toRem(15) toRem(78) toRem(6) toRem(78);
+            font-size: toRem(25);
+        }  
+    }
+
+    &__desc {
+        color: $secodary-color;
+        font-size: toRem(18);
+        position: relative;
+        text-align: center;
+        margin: 0;
+        padding: 0 toRem(403) toRem(95) toRem(403);
+        line-height: toRem(30);
+        letter-spacing: 0.04em;
+
+        @include respond(map-get($map: $container-max-width, $key: 'md')) {
+            padding: 0 toRem(201.1) toRem(47.5) toRem(201.1);
+        } 
+
+        @include respond(map-get($map: $container-max-width, $key: 'sm')) {
+            padding: toRem(10);
+        } 
+    }
+
+    &__cta {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    &__list  {
+        margin: 0;
+        padding: toRem(11) toRem(10);
+        background: $white;
+        border-radius: $extra-small-radius;
+        position: relative;
+        display: flex;
+        list-style: none;
+        font-size: toRem(18);
+        gap: toRem(18);
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $black;
+        font-size: toRem(18);
+        font-weight: 400;
+        padding: toRem(8) toRem(30);
+
+        &:hover,
+        &--active {
+            background: $black;
+            border-radius: $extra-small-radius;
+            color: $white;
+        }
+    }
+
+    &-sub__list {
+        position: relative;
+        display: flex;
+        justify-content: start;
+        padding: 0;
+        margin: 0;
+        top: toRem(-5);
+        background: $white;
+        border-radius: $small-radius;
+        margin: 0 auto;
+        max-width: 963px;
+        justify-content: space-between;
+
+        @include respond(map-get($map: $container-max-width, $key: 'sm')) {
+            border-radius: $extra-small-radius;
+            flex-direction: column;
+            align-items: baseline;
+            max-width: 900px;
+        }  
+    }
+
+    &-sub__item {
+        margin: toRem(48);
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+
+        @include respond(map-get($map: $container-max-width, $key: 'sm')) {
+            
+        }  
+    }
+
+    &-sub__line {
+        position: relative;
+        top: toRem(50);
+
+        @include respond(map-get($map: $container-max-width, $key: 'sm')) {
+           display: none;
+        }  
+    }
+    
+
+    &-sub__title {
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        line-height: toRem(29);
+        font-size: toRem(24);
+    }
+
+    &-sub__desc {
+        margin: 0;
+        padding: 0;
+        color: $light-gray;
+        font-weight: 400;
+        line-height: toRem(22);
+        font-size: toRem(18);
+    }
 }

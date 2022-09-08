@@ -27,6 +27,14 @@
     &--purple {
         padding: toRem(9) toRem(20);
         background: $purple;
-        border-radius: $small-radius;
+        border-radius: $medium-radius;
+    }
+
+    &--black {
+        padding: toRem(16) toRem(42);
+        background: $black;
+        border-radius: $extra-small-radius;
+        color: $white;
+        line-height: toRem(22);
     }
 }

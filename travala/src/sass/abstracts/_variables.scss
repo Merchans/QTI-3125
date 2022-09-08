@@ -4,7 +4,9 @@ $opacity: $opacity-6;
 
 // Radius
 $big-radius: 100px;
-$small-radius: 40px;
+$medium-radius: 40px;
+$small-radius: 25px;
+$extra-small-radius: 6px;
 
 
 // Breakpoints
@@ -19,7 +21,7 @@ $breakpoints: (
 $container-max-width: (
     xs: 480px, 
     sm: 960px,
-    md: 1280px, 
+    md: 1240px, // 1280px
     lg: 1920px,
     xl: 3840px
 );
