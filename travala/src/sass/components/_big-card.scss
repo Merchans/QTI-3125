@@ -46,5 +46,18 @@
             object-position: center;
             border-radius: $small-radius + 5;
         }
+
+        &::after {
+            content: '';
+            position: absolute;
+            margin: 0 auto;
+            width: 80%;
+            top: 0;
+            left: 0;
+            height: 100%;
+            opacity: 0.3;
+            filter: blur(50px);
+            border-radius: $medium-radius;
+        }
     }
 }

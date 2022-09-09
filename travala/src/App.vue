@@ -3,6 +3,7 @@ import MainFooter from './components/MainFooter.vue'
 import HeroSection from './components/HeroSection.vue'
 import MainHeader from './components/MainHeader.vue'
 import MainIntro from './components/MainIntro.vue'
+import LogoSection from './components/LogoSection.vue'
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import MainIntro from './components/MainIntro.vue'
       <MainHeader />
     </HeroSection>
     <MainIntro />
+    <LogoSection />
     <MainFooter />
   </div>
 </template>
