@@ -1,0 +1,50 @@
+@use "../abstracts/abstracts" as *;
+@use "../base/typography" as *;
+
+.big-card {
+    max-width: 442px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin: 0;
+        padding: 0;
+        color: $primary-color;
+        font-family: $font-family-base;
+        font-weight: 700;
+        max-width: 442px;
+        font-size: toRem(48);
+        line-height: toRem(62);
+        letter-spacing: toRem(-0.5);
+    }
+
+    &__text {
+        color: $primary-color;
+        opacity: $opacity;
+        margin: toRem(25) 0;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__image {
+        position: relative;
+
+        &--wrapper {
+            position: absolute;
+            margin: toRem(20);
+        }
+
+        img {
+            max-width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: $small-radius + 5;
+        }
+    }
+}

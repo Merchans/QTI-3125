@@ -1,6 +1,6 @@
 @use "../abstracts/mixins" as *;
 
-// Regular
+// Inter Regular
 @font-face {
 	font-family: 'Inter';
 	src: url('/fonts/Inter/static/Inter-Regular.ttf') format('truetype');
@@ -8,7 +8,15 @@
 	font-display: sans-serif;
 }
 
-// Bold
+// Inter Regular
+@font-face {
+	font-family: 'Inter';
+	src: url('/fonts/Inter/static/Inter-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-display: sans-serif;
+}
+
+// Inter Bold
 @font-face {
 	font-family: 'Inter';
 	src: url('/fonts/Inter/static/Inter-Bold.ttf') format('truetype');
@@ -16,7 +24,7 @@
 	font-display: sans-serif;
 }
 
-// Extra Bold
+// Inter Extra Bold
 @font-face {
 	font-family: 'Inter';
 	src: url('/fonts/Inter/static/Inter-ExtraBold.ttf') format('truetype');

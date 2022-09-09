@@ -1,0 +1,17 @@
+@use "../abstracts/abstracts" as *;
+@use "../base/base" as *;
+
+.main-list {
+    @include reset-list;
+    width: 552px;
+    
+    &__item {
+        padding: toRem(35) 0;
+        border-bottom: 2px solid #F7F7F7;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+}

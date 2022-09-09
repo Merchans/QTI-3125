@@ -1,0 +1,11 @@
+@use "../abstracts/abstracts" as *;
+.intro {
+    padding: toRem(50) 0;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+}
