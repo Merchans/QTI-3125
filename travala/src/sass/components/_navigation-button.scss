@@ -1,0 +1,39 @@
+@use "../abstracts/abstracts" as *;
+
+.navigation-button {
+    gap: toRem(12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--vertical {
+        flex-direction: column;
+
+        svg {
+            transform: rotate(90deg);
+        }
+    }
+
+    &__wrapper {
+        background: $gray;
+        padding: toRem(7.04) toRem(7);
+        border-radius: $big-radius;
+        cursor: pointer;
+    }
+
+    svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $white;
+        padding: toRem(9.45);
+        border-radius: $big-radius;
+        stroke: $black;
+
+        &:hover {
+            stroke: $primary-color;
+            background: $black;
+            stroke: $white;
+        }
+    }
+}

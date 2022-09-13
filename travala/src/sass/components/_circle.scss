@@ -1,0 +1,10 @@
+.cicler {
+    background: rgb(249,228,126);
+background: linear-gradient(90deg, rgba(249,228,126,1) 0%, rgba(248,214,87,1) 35%, rgba(246,195,42,1) 100%);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}

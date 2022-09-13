@@ -1,0 +1,41 @@
+@use "../abstracts/abstracts" as *;
+@use "../base/base" as *;
+
+.popular-destinations {
+    max-width: map-get($map: $container-max-width, $key: 'md');
+    justify-content: space-between;
+    margin: 0 auto;
+    @include section-padding;
+
+    &__wprapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @include section-padding;
+        padding-top: 0;
+    }
+
+    &__title {
+        color: $primary-color;
+        font-weight: 700;
+        font-size: toRem(48);
+        line-height: toRem(62);
+        letter-spacing: toRem(0.5);
+        margin: 0;
+        max-width: 332px;
+    }
+
+    &__desc {
+        color: $primary-color;
+        opacity: $opacity;
+        font-weight: 400;
+        font-size: toRem(20);
+        line-height:toRem(36);
+        align-self: flex-start;
+        max-width: 470px;
+
+        p {
+            margin: 0;
+        }
+    }
+}

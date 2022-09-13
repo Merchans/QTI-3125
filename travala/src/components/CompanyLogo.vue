@@ -4,6 +4,10 @@ defineProps({
         type: String,
         required: true
     },
+    url: {
+        type: String,
+        default: '#'
+    },
     alt: {
         type: String,
         default: 'Compeny Logo'
@@ -13,7 +17,9 @@ defineProps({
     
 <template>
     <div class="company-logo">
-        <img :src="path" :alt="alt">
+        <a :href="url" target="_blank">
+            <img :src="path" :alt="alt">
+        </a>
     </div>
 </template>
 

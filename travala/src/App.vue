@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection.vue'
 import MainHeader from './components/MainHeader.vue'
 import MainIntro from './components/MainIntro.vue'
 import LogoSection from './components/LogoSection.vue'
+import PopularDestinations from './components/PopularDestinations.vue'
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import LogoSection from './components/LogoSection.vue'
     </HeroSection>
     <MainIntro />
     <LogoSection />
+    <PopularDestinations />
     <MainFooter />
   </div>
 </template>

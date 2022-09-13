@@ -31,6 +31,10 @@
     &__badge {
         padding: toRem(6) 0 toRem(6) toRem(14.5);
         display: flex;
+
+        &--star {
+            padding: toRem(6);
+        }
     }
 
     &__text {

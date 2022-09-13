@@ -1,11 +1,18 @@
 @use "../abstracts/abstracts" as *;
 .intro {
-    padding: toRem(50) 0;
+    @include section-padding;
 
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    @include respond(map-get($map: $breakpoints, $key: 'md')) {
+        &__wrapper {
+            justify-content: center;
+        }
+     
     }
 
 }

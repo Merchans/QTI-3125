@@ -16,3 +16,7 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin section-padding {
+    padding: toRem(50) 0;
+}

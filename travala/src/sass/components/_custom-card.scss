@@ -1,0 +1,82 @@
+@use "../abstracts/abstracts" as *;
+@use "../base/base" as *;
+.card {
+    position: relative;
+    max-width: 400px;
+    background: $white;
+    background: #F7F7F7;
+    border-radius: $small-radius;
+    &__img {
+        display: flex;
+        img {
+            border-radius: $small-radius;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+
+    &__labels {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: toRem(10);
+        padding: toRem(20);
+        z-index: 1;
+        width: calc(100% - toRem(20) * 2);
+    }
+
+    &__title {
+        font-family: $font-family-third;
+        color: $primary-color;
+        font-weight: 700;
+        font-size: toRem(24);
+        line-height: toRem(28);
+        letter-spacing: toRem(0.5);
+        margin: 0;
+        padding: toRem(20) toRem(20) 0;
+        background: $white;
+    }
+
+    &__desc {
+        background: $white;
+        font-family: $font-family-base;
+        color: rgba(12, 17, 31, 0.6);
+        font-weight: 400;
+        font-size: toRem(18);
+        line-height: toRem(32);
+        letter-spacing: toRem(0.5);
+        margin: 0;
+        padding: toRem(12) toRem(32) toRem(20) toRem(20);
+        border-radius: $small-radius;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    &__meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    &__price {
+        small {
+            font-family: $font-family-base;
+            color:  rgba(12, 17, 31, 0.6);
+            letter-spacing: toRem(-0.5);
+            line-height: toRem(28);
+            font-size: toRem(18);
+            font-weight: 400;
+        }
+        strong {
+            color: $primary-color;
+            font-family: $font-family-third;
+            font-size: toRem(24);
+            font-weight: 700;
+            line-height: toRem(28);
+        }
+    }
+}
