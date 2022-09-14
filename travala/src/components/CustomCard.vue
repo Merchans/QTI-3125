@@ -25,15 +25,15 @@
     </script>
 <template>
     <div class="card">
-        <div class="card__labels">
-            <LabelStick :rating="true" text="5.0" />
-            <LabelStick text="Turkey" />
-        </div>
-        <div class="card__play-button">
-            
-        </div>
         <div class="card__img">
             <img :src="path" :alt="alt">
+            <div class="card__labels">
+            <LabelStick :rating="true" text="5.0" />
+            <LabelStick text="Turkey" />
+            </div>
+            <div class="card__play-button">
+                <LabelStick :isPlayButton="true" />
+            </div>
         </div>
         <div class="card__content">
             <h4 class="card__title">

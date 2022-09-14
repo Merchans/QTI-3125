@@ -8,6 +8,7 @@
     border-radius: $small-radius;
     &__img {
         display: flex;
+        position: relative;
         img {
             border-radius: $small-radius;
             border-bottom-left-radius: 0;
@@ -26,6 +27,17 @@
         padding: toRem(20);
         z-index: 1;
         width: calc(100% - toRem(20) * 2);
+    }
+
+    &__play-button {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     &__title {

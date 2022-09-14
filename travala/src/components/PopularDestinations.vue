@@ -30,6 +30,28 @@ import CustomCard from './CustomCard.vue'
                     The red and orange sand of the desert are very beautiful, let's take a trip here
                 </template>
             </CustomCard>
+            <CustomCard
+                price="150"
+                path="images/turkey-thumbnail.png"
+            >
+                <template #title>
+                    Cappadocia
+                </template>
+                <template #text>
+                    The red and orange sand of the desert are very beautiful, let's take a trip here
+                </template>
+            </CustomCard>
+            <CustomCard
+                price="150"
+                path="images/turkey-thumbnail.png"
+            >
+                <template #title>
+                    Cappadocia
+                </template>
+                <template #text>
+                    The red and orange sand of the desert are very beautiful, let's take a trip here
+                </template>
+            </CustomCard>
         </div>
     </section>
 </template>

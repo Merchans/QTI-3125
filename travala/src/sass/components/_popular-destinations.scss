@@ -11,6 +11,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         @include section-padding;
         padding-top: 0;
     }
@@ -36,6 +37,18 @@
 
         p {
             margin: 0;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        gap: toRem(40);  
+        flex-wrap: wrap;
+
+        @include respond(map-get($map: $container-max-width, $key: 'md')) {
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
         }
     }
 }

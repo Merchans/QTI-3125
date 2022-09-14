@@ -16,6 +16,14 @@
     }
 
 
+    &__play-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
     &___image::before {
         content: "";
         position: absolute;
@@ -34,6 +42,28 @@
 
         &--star {
             padding: toRem(6);
+        }
+
+        &--play-button {
+            padding: toRem(0);
+            padding: toRem(12);
+            position: relative;
+
+
+            &::after {
+                position: absolute;
+                display: inline-block;
+                content: " ";
+                width: 50%;
+                height: 50%;
+                top: 50%;
+                left: 50%;
+                background: $gold-fallback;
+                background: $gold;
+                border-radius: $big-radius;
+                transform: translate(-50%, -50%);
+                z-index: map-get($map: $z-index, $key: 'negative-light-weight');
+            }
         }
     }
 

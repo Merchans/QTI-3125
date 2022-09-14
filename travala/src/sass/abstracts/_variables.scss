@@ -23,7 +23,7 @@ $container-max-width: (
     xs: 480px, 
     sm: 960px,
     sm-md: 1073px,
-    md: 1240px, // 1280px
+    md: 1280px, // 1280px
     lg: 1920px,
     xl: 3840px
 );
@@ -32,6 +32,7 @@ $container-max-width: (
 // z-index 
 
 $z-index: (
+    negative-light-weight: -1,
     light-weight: 1,
     medium-weight: 10,
     heavy-weight: 100,
