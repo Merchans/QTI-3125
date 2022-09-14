@@ -47,7 +47,7 @@
         font-size: toRem(24);
         line-height: toRem(28);
         letter-spacing: toRem(0.5);
-        margin: 0;
+        @include clearMargin;
         padding: toRem(20) toRem(20) 0;
         background: $white;
     }
@@ -60,7 +60,7 @@
         font-size: toRem(18);
         line-height: toRem(32);
         letter-spacing: toRem(0.5);
-        margin: 0;
+        @include clearMargin;
         padding: toRem(12) toRem(32) toRem(20) toRem(20);
         border-radius: $small-radius;
         border-top-left-radius: 0;

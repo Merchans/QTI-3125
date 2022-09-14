@@ -11,8 +11,7 @@
     }
 
     &__title {
-        margin: 0;
-        padding: 0;
+        @include clearPaddingMargin;
         color: $primary-color;
         font-family: $font-family-base;
         font-weight: 700;
@@ -28,7 +27,7 @@
         margin: toRem(25) 0;
 
         p {
-            margin: 0;
+            @include clearMargin;
         }
     }
 
@@ -52,7 +51,7 @@
         &::after {
             content: '';
             position: absolute;
-            margin: 0 auto;
+            @include ElementCenter;
             width: 100%;
             top: 0;
             left: 0;

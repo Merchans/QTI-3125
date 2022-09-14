@@ -29,7 +29,7 @@
     &__title {
         color: $white;
         font-weight: 700;
-        margin: 0;
+        @include clearMargin;
         padding: toRem(60) toRem(312) toRem(24) toRem(312);
         line-height: toRem(86);
         font-size: toRem(72);
@@ -53,7 +53,7 @@
         font-size: toRem(18);
         position: relative;
         text-align: center;
-        margin: 0;
+        @include clearMargin;
         padding: 0 toRem(403) toRem(95) toRem(403);
         line-height: toRem(30);
         letter-spacing: 0.04em;
@@ -74,7 +74,7 @@
     }
 
     &__list  {
-        margin: 0;
+        @include clearMargin;
         padding: toRem(11) toRem(10);
         background: $white;
         border-radius: $extra-small-radius;
@@ -104,12 +104,11 @@
         position: relative;
         display: flex;
         justify-content: start;
-        padding: 0;
-        margin: 0;
+        @include clearPaddingMargin;
         top: toRem(-5);
         background: $white;
         border-radius: $small-radius;
-        margin: 0 auto;
+        @include ElementCenter;
         max-width: 963px;
         justify-content: space-between;
 
@@ -146,16 +145,14 @@
     
 
     &-sub__title {
-        margin: 0;
-        padding: 0;
+        @include clearPaddingMargin;
         font-weight: 400;
         line-height: toRem(29);
         font-size: toRem(24);
     }
 
     &-sub__desc {
-        margin: 0;
-        padding: 0;
+        @include clearPaddingMargin;
         color: $light-gray;
         font-weight: 400;
         line-height: toRem(22);

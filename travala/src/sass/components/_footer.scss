@@ -44,15 +44,13 @@
     }
 
     &__list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+        @include reset-list;
         font-family: $font-family-third;
     }
 
     &__link {
         list-style: none;
-        margin: 0;
+        @include clearMargin;
         text-decoration: none;
         color: $primary-color;
         
@@ -65,9 +63,7 @@
     }
 
     &__item {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+       @include reset-list;
         
     }
 

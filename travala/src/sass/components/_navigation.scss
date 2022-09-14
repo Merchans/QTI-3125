@@ -7,8 +7,7 @@
     align-items: center;
 
     &__cta {
-        padding: 0;
-        margin: 0;
+        @include clearPaddingMargin;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -27,9 +26,7 @@
 
     &__list {
         display: flex;
-        list-style: none;
-        padding: 0;
-        margin: 0;
+        @include reset-list;
         align-items: center;
 
         @include respond(map-get($map: $container-max-width, $key: 'md')) {
@@ -40,10 +37,8 @@
 
             @include respond(map-get($map: $container-max-width, $key: 'md')) {
                 display: flex;
-                list-style: none;
+                @include reset-list;
                 flex-direction: column;
-                padding: 0;
-                margin: 0;
                 align-items: center;
                 height: 100vh;
                 position: fixed;

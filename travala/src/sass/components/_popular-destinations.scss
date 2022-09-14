@@ -4,7 +4,7 @@
 .popular-destinations {
     max-width: map-get($map: $container-max-width, $key: 'md');
     justify-content: space-between;
-    margin: 0 auto;
+    @include ElementCenter;
     @include section-padding;
 
     &__wprapper {
@@ -22,7 +22,7 @@
         font-size: toRem(48);
         line-height: toRem(62);
         letter-spacing: toRem(0.5);
-        margin: 0;
+        @include clearMargin;
         max-width: 332px;
     }
 
@@ -36,7 +36,7 @@
         max-width: 470px;
 
         p {
-            margin: 0;
+            @include clearMargin;
         }
     }
 

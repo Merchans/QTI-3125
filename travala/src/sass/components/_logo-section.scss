@@ -2,7 +2,7 @@
 @use "../base/base" as *;
 .logo-section {
     max-width: map-get($map: $container-max-width, $key: 'md');
-    margin: 0 auto;
+    @include ElementCenter;
     @include section-padding;
     display: flex;
     flex-wrap: wrap;
