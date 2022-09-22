@@ -33,8 +33,8 @@ const cities = useCardsFilterStore();
           <h3 class="hero-sub__title">Locations</h3>
           <p class="hero-sub__desc">Select your city</p>
           <ul>
-            <li :key="index" v-for="(city, index) in cities.DestinationCities" @click="cities.removeCity(index)">
-                {{city}} <span>x</span>
+            <li :key="city.id" v-for="city in cities.DestinationCities" @click="cities.removeCity(city.id)">
+                {{city.name}} <span v-if="city.isActive">x</span>
             </li>
           </ul>
         </li>

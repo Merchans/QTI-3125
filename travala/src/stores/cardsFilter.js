@@ -4,21 +4,17 @@ import { defineStore } from 'pinia'
 export const useCardsFilterStore = defineStore('DestinationCities', () => {
 
     let DestinationCities = ref([
-
-        'Turkey',
-        'Namibia',
-        'New Mexico',
-
+        { id: 1, name: 'Turkey', isActive: true },
+        { id: 2, name: 'Namibia', isActive: true },
+        { id: 3, name: 'New Mexico', isActive: true },
     ]);
 
     function removeCity(key) {
-        DestinationCities.value = DestinationCities.value.filter(
-            (item, index) => index !== key
-        );
+        let toogleDestionation = DestinationCities.value.find((item) => item.id == key);
+        toogleDestionation.isActive = !toogleDestionation.isActive;
     }
 
+    let ActiveCities = DestinationCities.value.filter(city => city.isActive);
 
-    //   const SelectedDestinationCities = DestinationCities.filter()
-
-    return { DestinationCities, removeCity }
+    return { DestinationCities, removeCity, ActiveCities }
 })
