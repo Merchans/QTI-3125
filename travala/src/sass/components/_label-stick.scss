@@ -75,7 +75,7 @@
             font-weight: 500;
             font-size: toRem(18);
             color: $white;
-            margin: 0;
+            @include clearMargin;
             letter-spacing: toRem(0.02);
         }
     }

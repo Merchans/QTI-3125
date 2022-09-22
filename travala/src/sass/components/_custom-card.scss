@@ -91,4 +91,8 @@
             line-height: toRem(28);
         }
     }
+
+    &--hide {
+        display: none;
+    }
 }

@@ -1,6 +1,10 @@
 <script setup>
 import NavigationButton from './NavigationButton.vue'
 import CustomCard from './CustomCard.vue'
+import { useCardsFilterStore } from '../../src/stores/cardsFilter'
+
+const cities = useCardsFilterStore();
+
 </script>
 <template>
     <section class="popular-destinations wrapper">
@@ -19,32 +23,9 @@ import CustomCard from './CustomCard.vue'
             </div>
         </div>
         <div class="popular-destinations__cards">
-            <CustomCard
-                price="150"
-                path="images/turkey-thumbnail.png"
-            >
-                <template #title>
-                    Cappadocia
-                </template>
-                <template #text>
-                    The red and orange sand of the desert are very beautiful, let's take a trip here
-                </template>
-            </CustomCard>
-            <CustomCard
-                price="150"
-                path="images/turkey-thumbnail.png"
-            >
-                <template #title>
-                    Cappadocia
-                </template>
-                <template #text>
-                    The red and orange sand of the desert are very beautiful, let's take a trip here
-                </template>
-            </CustomCard>
-            <CustomCard
-                price="150"
-                path="images/turkey-thumbnail.png"
-            >
+            <CustomCard :key="index" v-for="(destination, index) in cities.DestinationCities" 
+                price="150" path="images/turkey-thumbnail.png"
+                rating="4.1" :LabelStickText="destination">
                 <template #title>
                     Cappadocia
                 </template>

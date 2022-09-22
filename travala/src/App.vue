@@ -5,6 +5,11 @@ import MainHeader from './components/MainHeader.vue'
 import MainIntro from './components/MainIntro.vue'
 import LogoSection from './components/LogoSection.vue'
 import PopularDestinations from './components/PopularDestinations.vue'
+import { useCounterStore } from './stores/counter'
+
+
+const couter = useCounterStore();
+
 </script>
 
 <template>

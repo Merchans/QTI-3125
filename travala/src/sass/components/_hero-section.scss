@@ -117,7 +117,28 @@
             flex-direction: column;
             align-items: baseline;
             max-width: 900px;
-        }  
+        }
+
+        ul {
+            display: none;
+        }
+
+        :hover ul {
+            position: relative;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: baseline;
+            @include reset-list;
+
+            li {
+                cursor: pointer;
+                display:  flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
     }
 
     &-sub__item {

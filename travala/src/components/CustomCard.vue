@@ -21,6 +21,14 @@
             type: String,
             default: 'destinations'
         },
+        rating: {
+            type: String,
+            default: '5.0'
+        },
+        LabelStickText: {
+            type: String,
+            default: 'Turkey'
+        },
     })
     </script>
 <template>
@@ -28,8 +36,8 @@
         <div class="card__img">
             <img :src="path" :alt="alt">
             <div class="card__labels">
-            <LabelStick :rating="true" text="5.0" />
-            <LabelStick text="Turkey" />
+            <LabelStick :rating="true" :text="rating" />
+            <LabelStick :text="LabelStickText" />
             </div>
             <div class="card__play-button">
                 <LabelStick :isPlayButton="true" />
@@ -38,6 +46,7 @@
         <div class="card__content">
             <h4 class="card__title">
                 <slot name="title"></slot>
+                
             </h4>
             <p class="card__desc">
               <slot name="text"></slot>
