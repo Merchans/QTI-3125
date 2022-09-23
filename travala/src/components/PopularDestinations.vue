@@ -25,9 +25,10 @@ const cities = useCardsFilterStore();
             </div>
         </div>
         <div class="popular-destinations__cards">
-            <div :key="destination.id" v-for="destination in cities.ActiveCities">
-                <CustomCard price="150" path="images/turkey-thumbnail.png" rating="4.1"
-                    :LabelStickText="destination.name" v-if="destination.isActive">
+                <CustomCard :key="destination.id" v-for="destination in cities.FilteredDestinationCities"
+                price="150" path="images/turkey-thumbnail.png" rating="4.1"
+                    :LabelStickText="destination.name"
+                    :class="{'card--hide': !destination.isActive}">
                     <template #title>
                         Cappadocia
                     </template>
@@ -35,7 +36,6 @@ const cities = useCardsFilterStore();
                         The red and orange sand of the desert are very beautiful, let's take a trip here
                     </template>
                 </CustomCard>
-            </div>
         </div>
     </section>
 </template>

@@ -9,12 +9,18 @@ export const useCardsFilterStore = defineStore('DestinationCities', () => {
         { id: 3, name: 'New Mexico', isActive: true },
     ]);
 
+    const FilteredDestinationCities = computed(
+        () => {
+            return DestinationCities.value.filter((city) => {
+                return city.isActive;
+            });
+        }
+    );
+
     function removeCity(key) {
         let toogleDestionation = DestinationCities.value.find((item) => item.id == key);
         toogleDestionation.isActive = !toogleDestionation.isActive;
     }
-
-    let ActiveCities = DestinationCities.value.filter(city => city.isActive);
-
-    return { DestinationCities, removeCity, ActiveCities }
+    
+    return { DestinationCities, removeCity, FilteredDestinationCities }
 })
